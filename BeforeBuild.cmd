@@ -1,3 +1,4 @@
+@ECHO off
 rem BeforeBuild.cmd
 rem
 rem This script performs the actions that are required before building the solution file
@@ -6,7 +7,6 @@ rem being performed inline in BuildAndTest.cmd, because AppVeyor cannot run Buil
 rem AppVeyor only allows you to specify the project to build, and a script to run before
 rem the build step. So that is how we have factored the build scripts.
 
-@ECHO off
 SETLOCAL ENABLEDELAYEDEXPANSION
 
 set ThisFileDir=%~dp0
